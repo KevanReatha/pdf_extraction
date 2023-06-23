@@ -15,7 +15,7 @@ Place PDF invoice files in the specified directory.
 Run the script to automatically extract and parse the invoice data.
 The extracted data is saved as a CSV file named "test.csv" for further analysis or processing.
 
-##Dependencies:
+## Dependencies:
 The project relies on the following Python libraries:
 
 - PyPDF2: Used for reading and extracting text from PDF documents.
