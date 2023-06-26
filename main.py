@@ -50,36 +50,15 @@ def extract_invoice_data_from_pdf(invoice_files, charges_list):
 
 
 def main():
-    invoice_directory = '/Users/kevantamom/Desktop/Aesop Ceva Invoices Reader'
+    invoice_directory = '/Users/kevantamom/Desktop'
     charges_list = [['YARD STORAGE COYNES 8 DAYS'],
                     ['TERMINAL OFFLOADING CHARGE'],
                     ['ORIGIN PORT CHARGES'],
                     ['CUSTOMS CLEARANCE'],
                     ['ADMINISTRATION FEE'],
                     ['DANGEROUS GOODS FEE'],
-                    ['ORIGIN PICK UP'],
-                    ['HANDLING & PROCESSING'],
-                    ['FCL FREIGHT OCEAN'],
-                    ['CARRIER DG SURCHARGE'],
-                    ['BAF'],
-                    ['DESTINATION PORT CHARGES'],
-                    ['DEST. CHARGES BILLING'],
-                    ['DEST. CONT. DRAYAGE'],
-                    ['DEST. HAULAGE DG SURCH'],
-                    ['DEST. CUSTOMS CLEARANCE'],
-                    ['DEST. FUEL SURCHARGE'],
-                    ['DEST. DELIVERY BILLING'],
-                    ['WAITING TIME TTL 0.25'],
-                    ['LOW SULPHUR SURCHARGE'],
-                    ['PANAMA CANAL SURCHARGE'],
-                    ['CONGESTION SURCHARGE'],
-                    ['WAITING TIME TTL 0.50'],
-                    ['DEST. ISF FILING'],
-                    ['FUTILE CONTAINER TRIP'],
-                    ['AFTER HOURS DELIVERY SAT'],
-                    ['CHASSIS CHARGE-CARRIER'],
-                    ['YARD STORAGE COYNES 29 DAY'],
-                    ['DOCUMENTATION FEE']]
+                    ['ORIGIN PICK UP']]
+
 
     # Get list of invoice files in the directory
     invoice_files = [file for file in os.listdir(invoice_directory) if file.startswith("Ceva")]
